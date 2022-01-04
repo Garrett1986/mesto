@@ -8,6 +8,8 @@
     line-height: 21.78px;
     height: 50px;
     border-radius: 2px;
+    border: none;
+    cursor: pointer;
 }
 .popup__save-result:hover{
   opacity: 0.8;

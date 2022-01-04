@@ -9,6 +9,7 @@
     margin-top: -40px;
     margin-left: 430px;
     border: none;
+    cursor: pointer;
   }
   .popup__close:hover{
     opacity: 0.6;

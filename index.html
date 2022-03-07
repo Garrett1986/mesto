@@ -21,65 +21,53 @@
       </div>
       <button class="profile__add-button" type="button"></button>
     </section>
-    <section class="elements content">
-      <article class="card">
-        <img class="card__image" src="./images/monk.jpg" alt="Горный монастырь">
-        <div class="card__footer">
-          <h2 class="card__title">Карачаевск</h2>
-          <button class="card__like card__like_activ" type="button"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img class="card__image" src="./images/evgenii-pliusnin-panorama-ekb.jpg" alt="Панорама Екатеринбурга">
-        <div class="card__footer">
-          <h2 class="card__title">Плотинка</h2>
-          <button class="card__like card__like_activ" type="button"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img class="card__image" src="./images/danila-hamsterman-fontan-ekb.jpg" alt="Фонтан в Екатеринбурге">
-        <div class="card__footer">
-          <h2 class="card__title">Фонтан</h2>
-          <button class="card__like card__like_activ" type="button"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img class="card__image" src="./images/vladimir-milevskiy-airport-ekb.jpg" alt="Взлетающий самолет">
-        <div class="card__footer">
-          <h2 class="card__title">Кольцово</h2>
-          <button class="card__like card__like_activ" type="button"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img class="card__image" src="./images/Rezh-river.jpg" alt="Водопады на реке Реж">
-        <div class="card__footer">
-          <h2 class="card__title">Водопады в Южаково</h2>
-          <button class="card__like card__like_activ" type="button"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img class="card__image" src="./images/chusovay-river.jpg" alt="Река Чусовая">
-        <div class="card__footer">
-          <h2 class="card__title">Чусовая</h2>
-          <button class="card__like card__like_activ" type="button"></button>
-        </div>
-      </article>
+    <section class="cards__container content">
+
     </section>
   </main>
-  <section class="popup">
-    <div class="popup__container">
-    <button class="popup__close" type="button"></button>
-    <form class="popup__form">
-      <h2 class="popup__title">Редактировать профиль</h2>
-      <input class="popup__input popup__input_type_name" type="text" value="Жак-Ив Кусто" name="profile_name">
-      <input class="popup__input popup__input_type_description" type="text" value="Исследователь океана" name="profile_des">
-      <button class="popup__save-result" type="submit">Сохранить</button>
-    </form>
-  </div>
+  <section class="popup popup_type_profile" id="profile">
+    <div class="popup__container popup__container_type_profile">
+      <button class="popup__close popup__close_type_profile" type="button"></button>
+      <form class="popup__form">
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <input class="popup__input popup__input_type_name" type="text" value="Жак-Ив Кусто" name="profile_name">
+        <input class="popup__input popup__input_type_description" type="text" value="Исследователь океана" name="profile_des">
+        <button class="popup__save-result" type="submit">Сохранить</button>
+      </form>
+    </div>
   </section>
+  <section class="popup popup_type_from" id="add_card">
+    <div class="popup__container">
+      <button class="popup__close popup__close_type_from" type="button"></button>
+      <form class="popup__form popup__form_type_card">
+        <h2 class="popup__title popup__title_type_card">Новое место</h2>
+        <input class="popup__input popup__input_type_title" type="text" placeholder="Название" name="profile_name">
+        <input class="popup__input popup__input_type_link" type="text" placeholder="Ссылка на картинку" name="profile_des">
+        <button class="popup__save-result" type="submit">Создать</button>
+      </form>
+    </div>
+  </section>
+  <section class="popup popup_type_preview" id="full_size">
+    <div class="popup__container_type_preview">
+      <button class="popup__close popup__close_type_preview" type="button"></button>
+      <img src=" " alt=" " class="popup__image">
+      <p class="popup__comment"></p>
+    </div>
+  </section>
+  <template id="template">
+    <article class="card">
+      <button class="card__trash" type="button"></button>
+      <img class="card__image" src="" alt="">
+      <div class="card__footer">
+        <h2 class="card__title"></h2>
+        <button class="card__like" type="button"></button>
+      </div>
+    </article>
+  </template>
   <footer class="footer">
     <p class="footer__copyrigth">&copy; 2021 Mesto Russia</p>
   </footer>
-  <script src="./script/index.js"></script>
+  <!-- <script src="./script/index.js"></script> -->
+  <script src="./script/test.js"></script>
 </body>
 </html>

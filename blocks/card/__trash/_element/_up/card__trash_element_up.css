@@ -1,0 +1,6 @@
+.card__trash_element_up{
+  background-image: url(../../../../../images/trash_up.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 1.28px;
+}
